@@ -3,7 +3,7 @@ import React from 'react';
 export const CardList = props => {
     <div>
         {
-            props.posts.map(pic=>{
+            props.children.map(pic=>{
                 return (<h1>{pic.title}</h1>);
             })
         }
