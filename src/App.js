@@ -1,6 +1,7 @@
 
 import './App.css';
 import React, { Component } from 'react';
+import { CardList } from './components/card-list/card-list.component';
 
 class App extends Component {
   constructor() {
@@ -19,14 +20,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        {
-          this.state.posts.map(pic => (
-            <div>
-              <p key={pic.id}> {pic.title} </p>
-              <img alt={pic.id} src={`https://robohash.org/${pic.id}/?set=set3&size=150x150`}></img>
-            </div>
-          ))
-        }
+       
       </div>
     );
   }
