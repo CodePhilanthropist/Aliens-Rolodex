@@ -1,35 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
-import React, {Component} from 'react';
 
-class App extends Component{
-  constructor(){
+import './App.css';
+import React, { Component } from 'react';
+
+class App extends Component {
+  constructor() {
     super();
     this.state = {
-      string: "Hello Rian Rey"
+      posts: []
     }
   }
 
+  componentDidMount() {
+    fetch('https://jsonplaceholder.typicode.com/photos')
+      .then(response => response.json())
+      .then(users => this.setState({ posts: users }))
+  }
 
-
-  render(){
+  render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            {this.state.string}
-          </a>
-          <button onClick={()=>{this.setState({string: "ANg binakol sir"})}}>Click me</button>
-        </header>
+        {
+          this.state.posts.map(pic => (
+            <div>
+              <p key={pic.id}> {pic.title} </p>
+              <img alt={pic.id} src={`https://robohash.org/${pic.id}/?set=set3&size=150x150`}></img>
+            </div>
+          ))
+        }
       </div>
     );
   }
