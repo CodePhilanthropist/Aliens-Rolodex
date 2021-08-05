@@ -3,6 +3,15 @@ import './App.css';
 import React, {Component} from 'react';
 
 class App extends Component{
+  constructor(){
+    super();
+    this.state = {
+      string: "Hello Rian Rey"
+    }
+  }
+
+
+
   render(){
     return (
       <div className="App">
@@ -17,8 +26,9 @@ class App extends Component{
             target="_blank"
             rel="noopener noreferrer"
           >
-            Learn React
+            {this.state.string}
           </a>
+          <button onClick={()=>{this.setState({string: "ANg binakol sir"})}}>Click me</button>
         </header>
       </div>
     );
