@@ -1,8 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
-import React, {component} from 'react';
+import React, {Component} from 'react';
 
-class App extends component{
+class App extends Component{
   render(){
     return (
       <div className="App">
