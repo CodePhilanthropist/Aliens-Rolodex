@@ -23,7 +23,7 @@ class App extends Component {
           this.state.posts.map(pic => (
             <div>
               <p key={pic.id}> {pic.title} </p>
-              <img alt={pic.id} src={`https://robohash.org/${pic.id}/?set=set3&size=150x150`}></img>
+              <img alt={pic.id} src={`https://robohash.org/${pic.id}/?set=set3&size=250x250`}></img>
             </div>
           ))
         }
