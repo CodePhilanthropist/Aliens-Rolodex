@@ -14,5 +14,3 @@ export const CardList = props => {
 function mountFunc(){
     console.log("almighty push")
 }
-
-mountFunc();
