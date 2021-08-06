@@ -11,6 +11,6 @@ export const CardList = props => {
 }
 
 
-function(){
+function mountFunc(){
     
 }
