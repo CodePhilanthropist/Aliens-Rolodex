@@ -10,7 +10,3 @@ export const CardList = props => {
     </div>
 }
 
-
-function mountFunc(){
-    console.log("almighty push")
-}
