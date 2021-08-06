@@ -12,5 +12,5 @@ export const CardList = props => {
 
 
 function mountFunc(){
-    console.log("checkng")
+    console.log("almighty pushes")
 }
