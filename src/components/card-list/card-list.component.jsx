@@ -12,5 +12,5 @@ export const CardList = props => {
 
 
 function mountFunc(){
-    console.log("almighty pushes haha yes")
+    console.log("almighty push")
 }
