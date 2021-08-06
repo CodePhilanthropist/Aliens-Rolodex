@@ -9,4 +9,4 @@ export const CardList = props => {
         }
     </div>
 }
-asd asdasd
+asd asdasd;
