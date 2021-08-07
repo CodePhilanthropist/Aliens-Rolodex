@@ -23,7 +23,7 @@ class App extends Component {
         <input
           type="search"
           onChange={(e) => {
-            this.setState({ searchField: e.target.value }, () => console.log(this.state.searchField));
+            this.setState({ searchField: e.target.value });
           }}
         />
         <CardList monsters={this.state.monsters} />
