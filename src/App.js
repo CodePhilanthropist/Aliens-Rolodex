@@ -20,7 +20,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-       <CardList name="Rian"/>
+       <CardList name="Rian"> This is just a text output</CardList>
        {this.state.posts.map(pic => <h1>{pic.title}</h1>)}
       </div>
     );
