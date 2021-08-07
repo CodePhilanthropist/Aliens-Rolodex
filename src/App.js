@@ -12,7 +12,7 @@ class App extends Component {
   }
 
   componentDidMount() {
-    fetch('https://jsonplaceholder.typicode.com/photos')
+    fetch('https://jsonplaceholder.typicode.com/users')
       .then(response => response.json())
       .then(users => this.setState({ posts: users }))
   }
@@ -20,7 +20,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-       <CardList name="Rian"> {this.state.posts.map(pic => <h1>{pic.title}</h1>)}</CardList>
+       <CardList name="Rian"> {this.state.posts.map(pic => <h1>{pic.name}</h1>)}</CardList>
        
       </div>
     );
