@@ -21,6 +21,7 @@ class App extends Component {
     return (
       <div className="App">
        <CardList name="Rian"/>
+       {this.state.posts.map(pic => <h1>{pic.title}</h1>)}
       </div>
     );
   }
