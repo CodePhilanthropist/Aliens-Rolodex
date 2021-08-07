@@ -4,7 +4,9 @@ export const CardList = props => {
     <div className="card-list">
         {
             
-         props.name  
+         props.children.map(
+             child => <h1>{child}</h1>
+         )  
         }
     </div>
 }
