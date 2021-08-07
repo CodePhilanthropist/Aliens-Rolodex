@@ -14,4 +14,3 @@ export const CardList = props => {
     </div>
 }
 
-// This is sample
