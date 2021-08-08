@@ -29,7 +29,8 @@ class App extends Component {
     });
     return (
       <div className="App">
-        <SearchBar changer={this.handleChange} placeHolder="Search Aliens"/>
+        <h1>Aliens Rolodex</h1>
+        <SearchBar changer={this.handleChange} placeHolder="Search Aliens" />
         <CardList monsters={filteredMonsters} />
       </div>
     );
