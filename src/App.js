@@ -19,7 +19,7 @@ class App extends Component {
   }
 
   handleChange = (e) => {
-    this.setState({ searchField: e.target.value });
+    this.setState((prevState, prevProps) => ({ searchField: e.target.value }));
   };
 
   render() {
