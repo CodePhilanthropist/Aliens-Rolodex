@@ -2,7 +2,7 @@
   "name": "aliens-rolodex",
   "version": "0.1.0",
   "private": true,
-  "homapage": "https://CodePhilanthropist.github.io/Aliens-Rolodex",
+  "homepage": "https://CodePhilanthropist.github.io/Aliens-Rolodex",
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",
